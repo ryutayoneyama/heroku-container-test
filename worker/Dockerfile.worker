@@ -1,0 +1,5 @@
+FROM debian:10-slim
+WORKDIR /root/
+COPY echo-date.sh /root/
+RUN apt-get update && apt-get install -y redis-tools
+CMD ["sh","echo-date.sh"]
