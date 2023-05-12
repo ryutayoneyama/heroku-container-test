@@ -4,7 +4,7 @@ while :
 do
     echo "`date -u +%Y/%m/%d' '%H:%M:%S`"
 
-    sleep 10
+    sleep 600
 done
 
 exit 0
