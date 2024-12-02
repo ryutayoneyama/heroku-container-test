@@ -2,8 +2,8 @@ build:
   docker:
     web: web/Dockerfile.web
     worker: worker/Dockerfile.worker
-  config:
-    UV_USE_IO_URING: 0
+  #config:
+  #  UV_USE_IO_URING: 0
 run:
   web: node web/index.js
   worker: sh worker/echo-date.sh
